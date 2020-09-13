@@ -1,0 +1,51 @@
+.home{
+    height: 100vh;
+}
+
+svg{
+    position: absolute;
+}
+
+.titre{
+    padding: 5%;
+    font-family: 'Indie Flower', cursive;
+    position: relative;
+    font-size: 4rem;
+}
+
+.formulaire{
+    margin-top: 5%;
+    padding: 0 0 5% 0;
+}
+
+.result{
+    color: black;
+    border-radius: 5%;
+    padding: 2%;
+}
+
+.ville{
+    font-size: 3rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+hr{
+    display: none;
+}
+
+.fas{
+    padding: 5%;
+}
+
+.fa-sun{
+    color: rgba(255, 206, 82, 0.877)!important;
+}
+
+.fa-cloud-sun{
+    color: lightblue!important;
+}
+
+.fa-cloud{
+    color: lightslategrey!important;
+}   
+

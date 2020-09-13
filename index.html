@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Météo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" >
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#a2d9ff" fill-opacity="1" d="M0,64L21.8,101.3C43.6,139,87,213,131,202.7C174.5,192,218,96,262,80C305.5,64,349,128,393,181.3C436.4,235,480,277,524,298.7C567.3,320,611,320,655,298.7C698.2,277,742,235,785,224C829.1,213,873,235,916,250.7C960,267,1004,277,1047,250.7C1090.9,224,1135,160,1178,144C1221.8,128,1265,160,1309,154.7C1352.7,149,1396,107,1418,85.3L1440,64L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path>
+          </svg>
+        <div class="container ">
+            <h1 class="text-center titre">API MÉTÉO</h1>
+            <form>
+                <div class="form-group formulaire">
+                  <div class="row">
+                        <!-- Form Recherche -->
+                        <div class="col-4"></div>
+                        <div class="col-4">
+                          <input type="text" class="form-control" id="ville" placeholder="Votre ville" required>
+                          <div class="erreur"></div>
+                        </div>
+                        <div class="col-4">
+                          <button type="submit" class="btn btn-warning"><i class="fas fa-search"></i></button>
+                        
+                        </div>    
+                  </div>
+                </div>
+              </form>   
+              <!-- Resultat -->
+              <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 result text-center" id='result'>
+                <h1 class="ville text-center"></h1> 
+                <hr class="my-4" width="75%" size="4">
+                <div class="des text-center"></div>
+                <div class="text-center"><h3 class="ciel"></h3></div> 
+                <div class="text-center"><h2 class="temps"></h2></div>    
+              </div>
+              <div class="col-4"></div>
+              </div>
+              
+        </div>    
+    </section>
+
+</body>
+</html>
+
+<!-- JS -->
+<script src="app.js"></script>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
