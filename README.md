@@ -1,1 +1,1 @@
-# Appli API-REST Météo
+# API-REST Météo
